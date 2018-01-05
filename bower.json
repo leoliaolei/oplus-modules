@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "appPath": "src/webapp/",
   "authors": [
-    "Leo Liao"
+    "leoliaolei <leoliaolei@gmail.com>"
   ],
   "description": "Oplus Modules Webapp",
   "private": false,
