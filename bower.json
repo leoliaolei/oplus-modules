@@ -1,5 +1,5 @@
 {
-  "name": "oplus",
+  "name": "oplus-modules",
   "version": "0.1.0",
   "appPath": "src/webapp/",
   "authors": [
@@ -46,7 +46,6 @@
     "echarts": "^3.8.5",
     "angular-ui-codemirror": "^0.3.0",
     "moment": "^2.18.1",
-    "angular-ui-calendar": "^1.0.2",
     "numeral": "^2.0.6",
     "fullcalendar": "^3.4.0",
     "js-beautify": "^1.6.14",
