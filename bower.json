@@ -6,18 +6,18 @@
     "Leo Liao"
   ],
   "description": "Oplus Modules Webapp",
-  "private": true,
+  "private": false,
   "main": [
     "dist/modules/oplus-main.js",
     "dist/modules/oplus-udp.js",
-	"dist/modules/oplus-dts.js",
-	"dist/modules/oplus-jat.js",
-	"dist/modules/oplus-uaa.js",
-	"dist/modules/oplus-dev.js",
-	"dist/modules/css/oplus-angulr.css",
+    "dist/modules/oplus-dts.js",
+    "dist/modules/oplus-jat.js",
+    "dist/modules/oplus-uaa.js",
+    "dist/modules/oplus-dev.js",
+    "dist/modules/css/oplus-angulr.css",
     "dist/modules/css/oplus-commons.css",
-	"dist/modules/css/oplus-udp.css",
-	"dist/modules/css/oplus-dts.css"
+    "dist/modules/css/oplus-udp.css",
+    "dist/modules/css/oplus-dts.css"
   ],
   "ignore": [
     "**/.*",
