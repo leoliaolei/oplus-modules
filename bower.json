@@ -1,23 +1,23 @@
 {
   "name": "oplus-modules",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "appPath": "src/webapp/",
   "authors": [
     "leoliaolei <leoliaolei@gmail.com>"
   ],
   "description": "Oplus Modules Webapp",
   "main": [
-    "dist/modules/oplus-main.js",
-    "dist/modules/oplus-udp.js",
-    "dist/modules/oplus-dts.js",
-    "dist/modules/oplus-jat.js",
-    "dist/modules/oplus-uaa.js",
-    "dist/modules/oplus-dev.js",
-    "dist/modules/css/oplus-vendors.css",
-    "dist/modules/css/oplus-angulr.css",
-    "dist/modules/css/oplus-commons.css",
-    "dist/modules/css/oplus-udp.css",
-    "dist/modules/css/oplus-dts.css"
+    "dist/js/oplus-main.js",
+    "dist/js/oplus-udp.js",
+    "dist/js/oplus-dts.js",
+    "dist/js/oplus-jat.js",
+    "dist/js/oplus-uaa.js",
+    "dist/js/oplus-dev.js",
+    "dist/css/oplus-vendors.css",
+    "dist/css/oplus-angulr.css",
+    "dist/css/oplus-commons.css",
+    "dist/css/oplus-udp.css",
+    "dist/css/oplus-dts.css"
   ],
   "ignore": [
     "**/.*",
