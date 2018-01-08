@@ -13,6 +13,7 @@
     "dist/modules/oplus-jat.js",
     "dist/modules/oplus-uaa.js",
     "dist/modules/oplus-dev.js",
+    "dist/modules/css/oplus-vendors.css",
     "dist/modules/css/oplus-angulr.css",
     "dist/modules/css/oplus-commons.css",
     "dist/modules/css/oplus-udp.css",
