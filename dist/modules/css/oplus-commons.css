@@ -194,11 +194,12 @@ select.form-control + .chosen-container .chosen-search input[type=text]:focus {
 .chosen-container-single .chosen-single {
   background: none; }
 
-.CodeMirror pre {
-  font-size: 16px; }
-
-.CodeMirror .cm-string {
-  word-break: break-all; }
+.CodeMirror {
+  height: 320px; }
+  .CodeMirror pre {
+    font-size: 16px; }
+  .CodeMirror .cm-string {
+    word-break: break-all; }
 
 .iconpicker-popover.popover {
   width: 540px; }

@@ -217,6 +217,26 @@ fieldset legend {
   width: 32px;
   line-height: 32px; }
 
+span.fancytree-node {
+  padding: 8px 0px; }
+
+span.fancytree-focused span.fancytree-title {
+  outline: 0px dotted black; }
+
+span.fancytree-title {
+  margin-top: -12px;
+  line-height: 32px; }
+
+span.fancytree-active span.fancytree-title {
+  background-color: #ccc; }
+
+.fancytree-treefocus span.fancytree-active span.fancytree-title {
+  color: white;
+  background-color: #ccc; }
+
+ul.fancytree-container {
+  border: 0px; }
+
 .op-udp-page-card {
   position: relative; }
   .op-udp-page-card .icon {
