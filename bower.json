@@ -75,21 +75,10 @@
   },
   "devDependencies": {},
   "overrides": {
-    "bootstrap": {
-      "main": [
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.min.js"
-      ]
-    },
     "angular-ui-router": {
       "main": [
         "release/angular-ui-router.min.js",
         "release/stateEvents.js"
-      ]
-    },
-    "color-js": {
-      "main": [
-        "color.js"
       ]
     },
     "jQRangeSlider": {
