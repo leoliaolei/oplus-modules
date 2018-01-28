@@ -68,7 +68,8 @@
     "popper.js": "^1.12.9",
     "fancytree": "^2.27.0",
     "jQuery-contextMenu": "^2.6.3",
-    "jquery.easy-pie-chart": "^2.1.6"
+    "jquery.easy-pie-chart": "^2.1.6",
+    "dt-colresize": "^2.5.2"
   },
   "resolutions": {
     "angular": "1.5.8",
