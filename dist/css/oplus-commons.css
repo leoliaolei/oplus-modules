@@ -392,7 +392,8 @@ select.form-control + .chosen-container .chosen-search input[type=text]:focus {
   background: none; }
 
 .CodeMirror {
-  height: 320px; }
+  height: 320px;
+  font-family: "Consolas", "Courier New", "Courier", "Microsoft Yahei Light", "Microsoft Yahei"; }
   .CodeMirror pre {
     font-size: 16px; }
   .CodeMirror .cm-string {
