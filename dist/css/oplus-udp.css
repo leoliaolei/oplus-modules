@@ -75,6 +75,9 @@ fieldset legend {
 .form-control.op-size-sm {
   width: 8em; }
 
+.popover-content a {
+  text-decoration: underline; }
+
 .col-sm-e1 {
   position: relative;
   min-height: 1px;
@@ -289,52 +292,56 @@ udp-page-display {
   .udp-float-actions:hover {
     opacity: 1; }
 
-.edit-mode #pd-canvas-zone {
-  padding: 0 8px; }
-  .edit-mode #pd-canvas-zone .uwidget {
-    margin-bottom: 8px; }
-    .edit-mode #pd-canvas-zone .uwidget.hover {
-      box-shadow: 0 0 2px 2px #51c6ea; }
-      .edit-mode #pd-canvas-zone .uwidget.hover > .uw-buttons {
-        display: block; }
-  .edit-mode #pd-canvas-zone .uwtype-layout-float {
-    background-color: rgba(128, 128, 128, 0.2); }
-    .edit-mode #pd-canvas-zone .uwtype-layout-float .uw-float:before {
-      content: 'F'; }
-  .edit-mode #pd-canvas-zone .uw-column:before,
-  .edit-mode #pd-canvas-zone .uw-float:before {
-    color: #9DA0A4;
-    background-color: rgba(128, 128, 128, 0.2);
-    font-size: 10px;
-    padding: 2px 4px;
-    position: absolute;
-    width: 15px;
-    left: -15px;
-    top: 0; }
-  .edit-mode #pd-canvas-zone .uw-column:before {
-    content: "C"; }
-  .edit-mode #pd-canvas-zone .widget-layout > .row {
-    outline: 1px dashed rgba(128, 128, 128, 0.25);
-    position: relative;
-    min-height: 30px;
-    padding: 8px; }
-  .edit-mode #pd-canvas-zone .uwtype-input [control="text"] {
-    min-width: 34px;
-    line-height: 34px; }
-  .edit-mode #pd-canvas-zone .uwtype-input [control="hidden"] {
-    background-color: #ddd; }
-  .edit-mode #pd-canvas-zone .uw-column {
-    margin: 0;
-    position: relative;
-    border: 1px solid rgba(128, 128, 128, 0.25);
-    min-height: 5em; }
+.edit-mode #pd-canvas-zone .uwidget {
+  margin-bottom: 8px; }
+  .edit-mode #pd-canvas-zone .uwidget.hover {
+    box-shadow: 0 0 2px 2px #51c6ea; }
+    .edit-mode #pd-canvas-zone .uwidget.hover > .uw-buttons {
+      display: block; }
+
+.edit-mode #pd-canvas-zone .uwtype-layout-float {
+  background-color: rgba(128, 128, 128, 0.2); }
+  .edit-mode #pd-canvas-zone .uwtype-layout-float .uw-float:before {
+    content: 'F'; }
+
+.edit-mode #pd-canvas-zone .uw-column:before,
+.edit-mode #pd-canvas-zone .uw-float:before {
+  color: #9DA0A4;
+  background-color: rgba(128, 128, 128, 0.2);
+  font-size: 10px;
+  padding: 2px 4px;
+  position: absolute;
+  width: 15px;
+  left: -15px;
+  top: 0; }
+
+.edit-mode #pd-canvas-zone .uw-column:before {
+  content: "C"; }
+
+.edit-mode #pd-canvas-zone .widget-layout > .row {
+  outline: 1px dashed rgba(128, 128, 128, 0.25);
+  position: relative;
+  min-height: 30px;
+  padding: 8px; }
+
+.edit-mode #pd-canvas-zone .uwtype-input [control="text"] {
+  min-width: 34px;
+  line-height: 34px; }
+
+.edit-mode #pd-canvas-zone .uwtype-input [control="hidden"] {
+  background-color: #ddd; }
+
+.edit-mode #pd-canvas-zone .uw-column {
+  margin: 0;
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  min-height: 5em; }
 
 .edit-mode.op-show-outline #pd-canvas-zone .uw-buttons {
   display: block; }
 
 .udp-pd-canvas {
-  background: #444;
-  padding: 8px; }
+  background: #444; }
 
 #pd-canvas-zone .ui-sortable-placeholder {
   box-shadow: 0 0 2px 2px #51c6ea;
@@ -363,18 +370,6 @@ udp-data-converter .input-group-addon {
   display: block;
   position: relative;
   margin-bottom: 8px; }
-
-.uwidget .page-header h1 {
-  font-size: 24px; }
-
-.uwidget .jumbotron {
-  padding: 12px; }
-  .uwidget .jumbotron h1 {
-    font-size: 48px; }
-
-.uwidget.uwtype-input, .uwidget.uwtype-button, .uwidget.uwtype-timer {
-  display: inline-block;
-  margin-right: 0.5em; }
 
 .uw-symbol {
   width: 180px;
@@ -500,6 +495,12 @@ udp-data-converter .input-group-addon {
 .uw-symbol.uwtype-daterange:before {
   content: "\f272"; }
 
+.uw-symbol.uwtype-percent:before {
+  content: "\f1ce"; }
+
+.uw-symbol.uwtype-gauge:before {
+  content: "\f0e4"; }
+
 .uwidget .uw-params.form-inline {
   margin-bottom: 8px; }
 
@@ -521,6 +522,18 @@ udp-data-converter .input-group-addon {
 
 .uwidget .form-horizontal .form-control-wrapper {
   flex: 1; }
+
+.uwidget .page-header h1 {
+  font-size: 24px; }
+
+.uwidget .jumbotron {
+  padding: 12px; }
+  .uwidget .jumbotron h1 {
+    font-size: 48px; }
+
+.uwidget.uwtype-input, .uwidget.uwtype-button, .uwidget.uwtype-timer {
+  display: inline-block;
+  margin-right: 0.5em; }
 
 .uwtype-layout-float .uw-float {
   min-width: 150px;
@@ -758,3 +771,33 @@ udp-page-display .uwtype-param {
   border-left: 1px solid white;
   margin-top: 25px;
   height: 5px; }
+
+.udp-percent-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  top: 24px; }
+
+.udp-percent-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  top: 50%;
+  margin-top: -15px; }
+
+.udp-percent-unit {
+  display: inline-block;
+  position: absolute;
+  float: left;
+  left: 0;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  color: #676b70;
+  font-weight: normal;
+  font-size: 8px;
+  top: 82px; }
