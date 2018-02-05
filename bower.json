@@ -1,6 +1,6 @@
 {
   "name": "oplus-modules",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "appPath": "src/webapp/",
   "authors": [
     "leoliaolei <leoliaolei@gmail.com>"
@@ -69,7 +69,8 @@
     "fancytree": "^2.27.0",
     "jQuery-contextMenu": "^2.6.3",
     "jquery.easy-pie-chart": "^2.1.6",
-    "dt-colresize": "^2.5.2"
+    "dt-colresize": "^2.5.2",
+    "oplus-commons": "^0.2.1"
   },
   "resolutions": {
     "angular": "1.5.8",
