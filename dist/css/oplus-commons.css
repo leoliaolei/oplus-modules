@@ -409,12 +409,6 @@ select.form-control + .chosen-container .chosen-search input[type=text]:focus {
   box-shadow: none;
   padding: 4px; }
 
-/***
-Spectrum Colorpicker v1.8.0
-https://github.com/bgrins/spectrum
-Author: Brian Grinstead
-License: MIT
-***/
 .sp-container {
   position: absolute;
   top: 0;
