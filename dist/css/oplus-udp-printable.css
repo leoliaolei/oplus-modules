@@ -1416,24 +1416,46 @@ a.text-black:hover {
   border: 0;
   border-radius: 2px;
   padding: 8px;
-  margin-bottom: 16px;
-  position: relative; }
+  margin-bottom: 8px;
+  position: relative;
+  min-height: 56px; }
+  .udp-kpi-card .kpi-text {
+    margin: 4px 0; }
   .udp-kpi-card .kpi-title, .udp-kpi-card .kpi-text {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-right: 32px; }
   .udp-kpi-card .kpi-title {
     font-size: 30px; }
   .udp-kpi-card .kpi-icon {
+    opacity: 0.5;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    opacity: 0.25; }
+    top: 8px;
+    right: 8px; }
     .udp-kpi-card .kpi-icon .fa {
-      font-size: 48px; }
-  .udp-kpi-card.no-icon .kpi-title, .udp-kpi-card.no-icon .kpi-text {
-    text-align: center; }
-  .udp-kpi-card.no-icon .kpi-icon {
+      font-size: 40px; }
+  .udp-kpi-card.udp-kpi-icon-left .kpi-title, .udp-kpi-card.udp-kpi-icon-left .kpi-text {
+    text-align: right;
+    padding-right: 0;
+    padding-left: 32px; }
+  .udp-kpi-card.udp-kpi-icon-left .kpi-icon {
+    right: auto;
+    left: 8px; }
+  .udp-kpi-card.udp-kpi-icon-center .kpi-icon {
+    position: relative;
+    text-align: center;
+    right: auto;
+    top: auto; }
+  .udp-kpi-card.udp-kpi-icon-center .kpi-title, .udp-kpi-card.udp-kpi-icon-center .kpi-text {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0; }
+  .udp-kpi-card.udp-kpi-icon-none .kpi-title, .udp-kpi-card.udp-kpi-icon-none .kpi-text {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0; }
+  .udp-kpi-card.udp-kpi-icon-none .kpi-icon {
     display: none; }
 
 .uwidget .uw-params.form-inline {
@@ -1467,8 +1489,12 @@ a.text-black:hover {
     font-size: 48px; }
 
 .uwidget.uwtype-input, .uwidget.uwtype-button, .uwidget.uwtype-timer {
-  display: inline-block;
-  margin-right: 0.5em; }
+  display: inline-block; }
+
+.uwidget + .uwtype-input,
+.uwidget + .uwtype-button,
+.uwidget + .uwtype-timer {
+  margin-left: 0.5em; }
 
 body, button {
   font-family: "Open Sans", "Microsoft Yahei Light", "Microsoft Yahei", Helvetica, Arial, sans-serif; }

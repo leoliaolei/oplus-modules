@@ -393,7 +393,7 @@ select.form-control + .chosen-container .chosen-search input[type=text]:focus {
 
 .CodeMirror {
   height: 320px;
-  font-family: "Consolas", "Courier New", "Courier", "Microsoft Yahei Light", "Microsoft Yahei"; }
+  font-family: "Menlo", "Monaco", "Consolas", "Courier", monospace, "Microsoft Yahei Light", "Microsoft Yahei"; }
   .CodeMirror pre {
     font-size: 16px; }
   .CodeMirror .cm-string {
@@ -965,3 +965,13 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 
 .op-clickable {
   cursor: pointer; }
+
+table.op-with-scroll-body tbody {
+  display: block;
+  overflow: auto; }
+
+table.op-with-scroll-body thead,
+table.op-with-scroll-body tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; }

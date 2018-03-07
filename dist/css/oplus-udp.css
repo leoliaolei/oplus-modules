@@ -4,7 +4,7 @@
 code, pre,
 input.form-control.code,
 textarea.form-control.code {
-  font-family: "Consolas", "Courier New", "Courier", "Microsoft Yahei Light", "Microsoft Yahei"; }
+  font-family: "Menlo", "Monaco", "Consolas", "Courier", monospace, "Microsoft Yahei Light", "Microsoft Yahei"; }
 
 .tooltip, .popover {
   font-family: "Open Sans", "Microsoft Yahei Light", "Microsoft Yahei", Helvetica, Arial, sans-serif; }
@@ -77,6 +77,12 @@ fieldset legend {
 
 .popover-content a {
   text-decoration: underline; }
+
+.nav > li > a {
+  padding: 8px 16px; }
+
+.nav-pills > li > a {
+  border-radius: 2px; }
 
 .col-sm-e1 {
   position: relative;
@@ -231,14 +237,13 @@ span.fancytree-title {
   line-height: 32px; }
 
 span.fancytree-active span.fancytree-title {
-  background-color: #ccc; }
+  background-color: #f5f5f5; }
 
 .fancytree-treefocus span.fancytree-active span.fancytree-title {
-  color: white;
-  background-color: #ccc; }
+  background-color: #f5f5f5; }
 
 ul.fancytree-container {
-  border: 0px; }
+  border: 0; }
 
 .op-udp-page-card {
   position: relative; }
@@ -294,9 +299,9 @@ udp-page-display {
 
 .edit-mode #pd-canvas-zone .uwidget {
   margin-bottom: 8px; }
-  .edit-mode #pd-canvas-zone .uwidget.hover {
+  .edit-mode #pd-canvas-zone .uwidget.hover, .edit-mode #pd-canvas-zone .uwidget .ui-resizable-resizing {
     box-shadow: 0 0 2px 2px #51c6ea; }
-    .edit-mode #pd-canvas-zone .uwidget.hover > .uw-buttons {
+    .edit-mode #pd-canvas-zone .uwidget.hover > .uw-buttons, .edit-mode #pd-canvas-zone .uwidget .ui-resizable-resizing > .uw-buttons {
       display: block; }
 
 .edit-mode #pd-canvas-zone .uwtype-layout-float {
@@ -335,7 +340,7 @@ udp-page-display {
   margin: 0;
   position: relative;
   border: 1px solid rgba(128, 128, 128, 0.25);
-  min-height: 5em; }
+  min-height: 2em; }
 
 .edit-mode.op-show-outline #pd-canvas-zone .uw-buttons {
   display: block; }
@@ -368,8 +373,7 @@ udp-data-converter .input-group-addon {
 
 .uwidget {
   display: block;
-  position: relative;
-  margin-bottom: 8px; }
+  position: relative; }
 
 .uw-symbol {
   width: 180px;
@@ -532,8 +536,12 @@ udp-data-converter .input-group-addon {
     font-size: 48px; }
 
 .uwidget.uwtype-input, .uwidget.uwtype-button, .uwidget.uwtype-timer {
-  display: inline-block;
-  margin-right: 0.5em; }
+  display: inline-block; }
+
+.uwidget + .uwtype-input,
+.uwidget + .uwtype-button,
+.uwidget + .uwtype-timer {
+  margin-left: 0.5em; }
 
 .uwtype-layout-float .uw-float {
   min-width: 150px;
@@ -544,24 +552,46 @@ udp-data-converter .input-group-addon {
   border: 0;
   border-radius: 2px;
   padding: 8px;
-  margin-bottom: 16px;
-  position: relative; }
+  margin-bottom: 8px;
+  position: relative;
+  min-height: 56px; }
+  .udp-kpi-card .kpi-text {
+    margin: 4px 0; }
   .udp-kpi-card .kpi-title, .udp-kpi-card .kpi-text {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-right: 32px; }
   .udp-kpi-card .kpi-title {
     font-size: 30px; }
   .udp-kpi-card .kpi-icon {
+    opacity: 0.5;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    opacity: 0.25; }
+    top: 8px;
+    right: 8px; }
     .udp-kpi-card .kpi-icon .fa {
-      font-size: 48px; }
-  .udp-kpi-card.no-icon .kpi-title, .udp-kpi-card.no-icon .kpi-text {
-    text-align: center; }
-  .udp-kpi-card.no-icon .kpi-icon {
+      font-size: 40px; }
+  .udp-kpi-card.udp-kpi-icon-left .kpi-title, .udp-kpi-card.udp-kpi-icon-left .kpi-text {
+    text-align: right;
+    padding-right: 0;
+    padding-left: 32px; }
+  .udp-kpi-card.udp-kpi-icon-left .kpi-icon {
+    right: auto;
+    left: 8px; }
+  .udp-kpi-card.udp-kpi-icon-center .kpi-icon {
+    position: relative;
+    text-align: center;
+    right: auto;
+    top: auto; }
+  .udp-kpi-card.udp-kpi-icon-center .kpi-title, .udp-kpi-card.udp-kpi-icon-center .kpi-text {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0; }
+  .udp-kpi-card.udp-kpi-icon-none .kpi-title, .udp-kpi-card.udp-kpi-icon-none .kpi-text {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0; }
+  .udp-kpi-card.udp-kpi-icon-none .kpi-icon {
     display: none; }
 
 udp-page-display .uwtype-param {
@@ -801,3 +831,6 @@ udp-page-display .uwtype-param {
   font-weight: normal;
   font-size: 8px;
   top: 82px; }
+
+.uwtype-text-p td, .uwtype-text-p th {
+  word-break: break-all; }
