@@ -78,10 +78,8 @@ fieldset legend {
 .popover-content a {
   text-decoration: underline; }
 
-.nav > li > a {
-  padding: 8px 16px; }
-
 .nav-pills > li > a {
+  padding: 8px 16px;
   border-radius: 2px; }
 
 .col-sm-e1 {

@@ -1,6 +1,6 @@
 {
   "name": "oplus-modules",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "appPath": "src/webapp/",
   "authors": [
     "leoliaolei <leoliaolei@gmail.com>"
@@ -43,7 +43,7 @@
     "js-xlsx": "^0.10.5",
     "lodash": "^4.17.4",
     "animate.css": "^3.5.2",
-    "alertify-js": "^1.10.0",
+    "alertify-js": "^1.11.0",
     "echarts": "^3.8.5",
     "angular-ui-codemirror": "^0.3.0",
     "moment": "^2.18.1",
